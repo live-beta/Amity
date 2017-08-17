@@ -29,7 +29,7 @@ public class amityTests {
 
 	@Test
 	public void test_that_a_working_space_has_been_created_successfully(){
-		
+
 		/*Tests a new office can be added successfully */
 
 		assertEquals(room_obj(office_data,"OFFICE"), "OFFICE space Added Successfully");
@@ -41,6 +41,13 @@ public class amityTests {
 		
 		assertEquals(room_obj(room_data,"LIVING"),"LIVING area has been creted successfully");
 	
+	}
+	
+	@Test
+
+	public void test_that_correct_room_category_is_added(){
+		
+		assertEquals(room_obj(room_data,"OTHER"),"Room type is not defined");
 	}
 
 	@Test
