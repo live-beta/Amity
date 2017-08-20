@@ -26,11 +26,17 @@ public class amityTests {
 		office_data = new String [] {"Area 1","Area 2","Area 3"};
 
 	}
+	@Test
+	public void test_correct_response_when_no_data_is_entered(){
+
+		/* A specific value should be returned whn*/
+		assertEquals(room_obj("","DEFAULT"),"There's no room to be saved");
+
+	}
 
 	@Test
 	public void test_that_a_working_space_has_been_created_successfully(){
 
-		/*Tests a new office can be added successfully */
 
 		assertEquals(room_obj(office_data,"OFFICE"), "OFFICE space Added Successfully");
 
@@ -41,6 +47,25 @@ public class amityTests {
 		
 		assertEquals(room_obj(room_data,"LIVING"),"LIVING area has been creted successfully");
 	
+	}
+
+	@Test 
+	public void test_that_rooms_are_available_for_allocation(){
+
+		assertEquals(room_obj(),"There are no rooms to assign");
+
+	}
+
+	@Test
+	public void test_that_the_system_can_tell_if_all_rooms_are_occupied(){
+
+		assertEquals(room_obj(),"All rooms are occupied");
+	}
+ls
+	@Test
+	public void test_that_the_room_being_assigned_is_of_correct_type(){
+
+		assertEquals(room_obj(),room.type="LIVING");
 	}
 	
 	@Test
@@ -59,6 +84,9 @@ public class amityTests {
 
 	@Test
 	public void test_reallocate_person(){
+
+		/*Assert that a user has been reallocated properly*/
+
 
 	}
 
