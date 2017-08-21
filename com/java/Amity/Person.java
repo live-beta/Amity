@@ -13,10 +13,15 @@ public class Person extends Room {
  	String room_name;
  	String officeSpaceName;
  }
- public string add_person(){
+ public String add_person(){
  	String message;
 
  	return message;
  }
+ public String reallocate_person(){
+
+ 	String message;
+
+ 	return message;
  
 }

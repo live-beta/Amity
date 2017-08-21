@@ -2,7 +2,7 @@
 * Class that manages the data and functionality
 * of rooms
 */
-public class Room {
+public class Room extends People {
 
 	/*Constructor class*/
 	public void room(String room_names){
@@ -10,14 +10,18 @@ public class Room {
 		String [] roomNames= new String []{roomNames};
 
 		List<String> roomList = new ArrayLists<String>();
+		String message;
 
 
 	}
-	public string add_room(){
-
-		String message
+	public String add_room(){
        
        /* Assign the correct room type */
+     if (roomName.length == 0) {
+     	message = "There'e are no rooms to save";
+     	return message;
+
+     } else {
 
  		for (int i =0; i < roomNames.length; i++ ) {
 
@@ -36,7 +40,22 @@ public class Room {
  					return message;
  			}
 
-		return message;
+	}
+			return message;
+}
+
+}	
+	public String assignRoom(){
+		/* this method is invoked from a person method */
+
+		// check data fom an already existing list 
+		// ensure that the method only fdoes on e thing in returning the required room 
+		// test that the room theat is returned is of the correct order. 
+
+
+	}
+	
+	public String reallocateRoom(){
 
 	}
 
