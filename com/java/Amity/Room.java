@@ -7,6 +7,7 @@ package Room;
 public class Room extends People {
 
 	private String roomName, category;
+	private int capacity;
 
 	public Room (String roomName, String category){
 
@@ -18,6 +19,12 @@ public class Room extends People {
 	public void setRoomName(String roomName){
 
 		this.roomName = roomName;
+	}
+	/*Set the room capacity*/
+
+	public void setCapacity(int capacity){
+
+		this.capacity = capacity;
 	}
 	/* Set room category*/
 
