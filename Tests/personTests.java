@@ -10,7 +10,6 @@ import junit.framework.*;
 public class personTest {
 	String [] person_data;
 
-}
 
 public void setUp(){
 	Person person_obj = new Person();
@@ -30,5 +29,13 @@ public void test_reallocate_person(){
 
 	/*Assert that a user has been reallocated properly*/
 
+	assertEquals(person_obj(person_data)," Reallocation success")
+
 	}
 
+@Test
+public void test_that_person_data_is_of_correct_type(){
+
+   assertTrue(person_data instanceof Array);
+}
+}
