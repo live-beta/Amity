@@ -50,6 +50,12 @@ public class roomTests {
 		assertEquals(room_obj(),"There are no rooms to assign");
 
 	}
+	@Test 
+
+	public void test_that_roomns_are_available_for_reallocation(){
+
+		assertEquals(room_obj(),"There are no rooms for reallocaltion");
+	}
 
 	@Test
 	public void test_that_the_system_can_tell_if_all_rooms_are_occupied(){
