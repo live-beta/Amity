@@ -1,7 +1,7 @@
 package Person;
 
 /**
-* Class that contains functionality for handling people
+* Class constaing data states for people in Amity.
 */
 
 public class Person extends Room {
@@ -9,6 +9,7 @@ public class Person extends Room {
 
  private String name,category;
  private char wants_accomodation;
+ List <String> personList = new ArrayList<String>();
 
  /* Contructor function for the initialioskatin of data items */
 
@@ -34,16 +35,14 @@ public class Person extends Room {
 
  	this.category = category;
  }
-/* sets up accomodation*/
+/* Sets up accomodation*/
 
 public void setAccomodation(String accomodation){
 
 	this.accomodation = accomodation;
 }
 
- /* Settin up setters*/
-
-/*Gets the persons name*/
+/* Gets the persons name*/
  public String getName (){
 
  	return name;
@@ -55,7 +54,7 @@ public void setAccomodation(String accomodation){
  	return category;
 
  }
- /*Gets the persons accomdation preference*/
+ /* Gets the persons accomdation preference*/
 
  public Char getAccomodation(){
 
@@ -64,17 +63,4 @@ public void setAccomodation(String accomodation){
 
  /* Method to add a new person to the application*/
 
- public String add_person(){
- 	String message;
- 	this.name = getName();
-
-
- 	return message;
  }
- public String reallocate_person(){
-
- 	String message;
-
- 	return message;
- 
-}
